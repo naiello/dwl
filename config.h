@@ -123,7 +123,7 @@ static const enum libinput_config_tap_button_map button_map = LIBINPUT_CONFIG_TA
 /* commands */
 static const char *termcmd[] = { "foot", NULL };
 static const char *menucmd[] = { "wofi", "-G", "--show", "drun", NULL };
-static const char *browsercmd[] = { "firefox-bin", NULL };
+static const char *browsercmd[] = { "qutebrowser", NULL };
 static const char *passwdcmd[] = { "keepassxc", NULL };
 
 #define BRIGHTNESS(MOD) { .v = (const char*[]){ "brightnessctl", "s", (MOD), NULL } }
