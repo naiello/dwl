@@ -128,7 +128,7 @@ static const char *passwdcmd[] = { "keepassxc", NULL };
 
 #define BRIGHTNESS(MOD) { .v = (const char*[]){ "brightnessctl", "s", (MOD), NULL } }
 #define AUDIO(CMD, ARG) { .v = (const char*[]){ "wpctl", (CMD), "@DEFAULT_AUDIO_SINK@", (ARG), NULL } }
-#define PLAYERCTL(CMD)  { .v = (const char*[]){ "playerctl", (CMD) } }
+#define PLAYERCTL(CMD)  { .v = (const char*[]){ "playerctl", (CMD), NULL } }
 
 static const Key keys[] = {
 	/* Note that Shift changes certain key codes: 2 -> at, etc. */
